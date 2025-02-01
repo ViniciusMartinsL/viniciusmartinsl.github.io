@@ -1,0 +1,6 @@
+@import "./global.css";
+@import "./header.css";
+@import "./introducao.css";
+//body {
+  background-color: rgb(39, 39, 39);
+}
