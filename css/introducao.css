@@ -52,8 +52,17 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    text-align: justify;
+  }
   .introducao img {
     display: none;
+  }
+
+  .introducao h1::before {
+    left: 0px;
+    top: -10px;
   }
 }
