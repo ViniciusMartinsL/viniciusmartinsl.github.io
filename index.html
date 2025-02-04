@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Desenvolvedor Front End e UX/UI Designer localizado em Curitiba-PR">
-  <title>Vinicius L - Desenvolvedor e Designer</title>
+  <title>Vinicius L - Front End Developer & Designer</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <script src="./js/translate.js" defer></script>
 </head>
 
 <body>
@@ -14,43 +15,53 @@
     <img src="./img/viniciusmlemos.svg" alt="VML" class="logotipo">
     <nav>
       <ul class="header_menu">
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#experiencia" data-i18n="experiencia">Experiência</a></li>
+        <li><a href="#formacao" data-i18n="formacao">Formação</a></li>
+        <li><a href="#contato" data-i18n="contato">Contato</a></li>
       </ul>
     </nav>
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="languageToggle">
+        <span class="slider">
+          <span class="flag"></span>
+        </span>
+      </label>
+    </div>
   </header>
 
   <main class="introducao">
     <img src="./img/perfil.jpg" alt="Foto VML" width="360" height="520">
     <div>
-      <h1>Desenvolvedor<br>Front End &<br>UX/UIDesigner</h1>
-      <p>Localizado em Curitiba ❄️</p>
+      <h1 data-i18n="introducaoTitulo">Desenvolvedor<br>Front End &<br>UX/UI Designer</h1>
+      <p data-i18n="introducaoTexto">Localizado em Curitiba ❄️</p>
     </div>
   </main>
+
   <section class="experiencia" id="experiencia" aria-label="Experiência">
-    <h2 class="subtitulo">Experiência</h2>
+    <h2 class="subtitulo" data-i18n="experience_title">Experiência</h2>
     <div>
-      <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.</strong> Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI</strong> Design do projeto.</p>
+      <p class="experiencia-texto" data-i18n="experienciaTexto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI</strong> Design do projeto.</p>
 
       <div class="empresa">
         <span class="empresa-ano">2024-2025</span>
         <h3 class="empresa-titulo">Bikcraft</h3>
-        <span class="empresa-titulo">Desenvolvedor Júnior</span>
-        <p class="empresa-texto">No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do site. Além disso, também prestei consultoria no Design.</p>
+        <span class="empresa-titulo" data-i18n="role_junior_dev">Desenvolvedor Júnior</span>
+        <p class="empresa-texto" data-i18n="bikcraft_text">No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do site. Além disso, também prestei consultoria no Design.</p>
         <ul class="empresa-habilidades">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
-          <li>UX Design</li>
-          <li>UI Design</li>
+          <li data-i18n="ux_design">UX Design</li>
+          <li data-i18n="ui_design">UI Design</li>
         </ul>
       </div>
+
       <div class="empresa">
         <span class="empresa-ano">2022-2024</span>
         <h3 class="empresa-titulo">Jurisoft</h3>
-        <span class="empresa-titulo">Designer Pleno</span>
-        <p class="empresa-texto">Atuei cuidando do design de landing pages e na criação de interfaces com foco em UX/UI, buscando soluções visuais que otimizassem a experiência do usuário.</p>
+        <span class="empresa-titulo" data-i18n="role_mid_designer">Designer Pleno</span>
+        <p class="empresa-texto" data-i18n="jurisoft_text">Atuei cuidando do design de landing pages e na criação de interfaces com foco em UX/UI, buscando soluções visuais que otimizassem a experiência do usuário.</p>
         <ul class="empresa-habilidades">
           <li>Illustrator</li>
           <li>Photoshop</li>
@@ -59,11 +70,12 @@
           <li>Kanban</li>
         </ul>
       </div>
+
       <div class="empresa">
         <span class="empresa-ano">2018-2022</span>
         <h3 class="empresa-titulo">Projetec</h3>
-        <span class="empresa-titulo">Designer Jr</span>
-        <p class="empresa-texto">Desenvolvi identidades visuais para eventos corporativos e atuei na operação de vídeo para garantir qualidade visual durante as execuções.</p>
+        <span class="empresa-titulo" data-i18n="role_jr_designer">Designer Jr</span>
+        <p class="empresa-texto" data-i18n="projetec_text">Desenvolvi identidades visuais para eventos corporativos e atuei na operação de vídeo para garantir qualidade visual durante as execuções.</p>
         <ul class="empresa-habilidades">
           <li>Resolume Arena</li>
           <li>Photoshop</li>
@@ -77,61 +89,151 @@
 
   <section class="formacao" id="formacao" aria-label="Formação">
     <div class="formacao-container">
-      <h2 class="subtitulo">Formação</h2>
+      <h2 class="subtitulo" data-i18n="education_title">Formação</h2>
       <div>
-        <p class="formacao-texto"> Minha mais recente experiência acadêmica foi a <strong>Graduação</strong> 🎓 que fiz em <strong>Design Visual</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
-        </p>
-        <div>
-          <ul class="faculdade-lista">
-            <li class="faculdade">
-              <span class="faculdade-tipo">Bacharel</span>
-              <h3 class="faculdade-curso">Design Visual</h3>
-              <span class="faculdade-instituicao">Universidade Positivo</span>
-            </li>
-            <li class="faculdade">
-              <span class="faculdade-tipo">Tecnólogo</span>
-              <h3 class="faculdade-curso">Design Gráfico</h3>
-              <span class="faculdade-instituicao">EBAC</span>
-            </li>
-            <li class="faculdade">
-              <span class="faculdade-tipo">Tecnólogo</span>
-              <h3 class="faculdade-curso">Eletrotécnica</h3>
-              <span class="faculdade-instituicao">IFMT</span>
-            </li>
-          </ul>
-          <div class="formacao-extra">
-            <div class="cursos">
-              <h3>Cursos Intensivos</h3>
-              <ul>
-                <li> UX Design & UI Design <span>56h</span>
-                <li> Front End Para Iniciantes <span>90h</span>
-                <li> JavaScript ES6 Completo <span>72h</span>
-                </li>
-              </ul>
-            </div>
-            <div class="idiomas">
-              <h3>Idiomas</h3>
-              <ul>
-                <li> Inglês <span>/ Fluente</span>
-                <li> Português <span>/ Nativo</span>
-                </li>
-              </ul>
-            </div>
+        <p class="formacao-texto" data-i18n="education_text">Minha mais recente experiência acadêmica foi a <strong>Graduação</strong> 🎓 que fiz em <strong>Design Visual</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
+        <ul class="faculdade-lista">
+          <li class="faculdade">
+            <span class="faculdade-tipo" data-i18n="degree_bachelor">Bacharel</span>
+            <h3 class="faculdade-curso" data-i18n="course_visual_design">Design Visual</h3>
+            <span class="faculdade-instituicao">Universidade Positivo</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo" data-i18n="degree_technologist">Tecnólogo</span>
+            <h3 class="faculdade-curso" data-i18n="course_graphic_design">Design Gráfico</h3>
+            <span class="faculdade-instituicao">EBAC</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo" data-i18n="degree_technologist">Tecnólogo</span>
+            <h3 class="faculdade-curso" data-i18n="course_electrotechnics">Eletrotécnica</h3>
+            <span class="faculdade-instituicao">IFMT</span>
+          </li>
+        </ul>
+
+        <div class="formacao-extra">
+          <div class="cursos">
+            <h3 data-i18n="intensive_courses">Cursos Intensivos</h3>
+            <ul>
+              <li>UX Design & UI Design <span>56h</span></li>
+              <li data-i18n="course_frontend">Front End Para Iniciantes <span>90h</span></li>
+              <li data-i18n="course_js">JavaScript ES6 Completo <span>72h</span></li>
+            </ul>
+          </div>
+
+          <div class="idiomas">
+            <h3 data-i18n="languages">Idiomas</h3>
+            <ul>
+              <li data-i18n="language_english">Inglês <span>/ Fluente</span></li>
+              <li data-i18n="language_portuguese">Português <span>/ Nativo</span></li>
+            </ul>
           </div>
         </div>
+      </div>
+    </div>
   </section>
-  </div>
+
   <footer class="footer" id="contato">
     <div class="footer-container">
-      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
+      <p class="footer-texto" data-i18n="footer_text">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
       <ul class="footer-contato">
         <li><a href="mailto:viinicius99@gmail.com">E-mail</a></li>
         <li><a href="https://github.com/ViniciusMartinsL">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/vinicius-lemos-a0aba5199/">LinkedIn</a></li>
       </ul>
-      <p class="footer-copy">Vinicius. Alguns direitos Reservados.</p>
+      <p class="footer-copy" data-i18n="footer_copy">Vinicius. Alguns direitos Reservados.</p>
     </div>
   </footer>
+  <script>
+    const translations = {
+      pt: {
+        experiencia: "Experiência",
+        formacao: "Formação",
+        contato: "Contato",
+        introducaoTitulo: "Desenvolvedor<br>Front End &<br>UX/UI Designer",
+        introducaoTexto: "Localizado em Curitiba ❄️",
+        experience_title: "Experiência",
+        role_junior_dev: "Desenvolvedor Júnior",
+        experienciaTexto: "Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI</strong> Design do projeto.",
+        bikcraft_text: "No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do site. Além disso, também prestei consultoria no Design.",
+        role_mid_designer: "Designer Pleno",
+        jurisoft_text: "Atuei cuidando do design de landing pages e na criação de interfaces com foco em UX/UI, buscando soluções visuais que otimizassem a experiência do usuário.",
+        role_jr_designer: "Designer Júnior",
+        projetec_text: "Desenvolvi identidades visuais para eventos corporativos e atuei na operação de vídeo para garantir qualidade visual durante as execuções.",
+        education_title: "Formação",
+        education_text: "Minha mais recente experiência acadêmica foi a <strong>Graduação</strong> 🎓 que fiz em <strong>Design Visual</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.",
+        degree_bachelor: "Bacharel",
+        course_visual_design: "Design Visual",
+        degree_technologist: "Tecnólogo",
+        course_graphic_design: "Design Gráfico",
+        course_electrotechnics: "Eletrotécnica",
+        intensive_courses: "Cursos Intensivos",
+        course_frontend: "Front End Para Iniciantes <span>90h</span>",
+        course_js: "JavaScript ES6 Complete <span>72h</span>",
+        languages: "Idiomas",
+        language_english: "Inglês <span> / Fluente</span>",
+        language_portuguese: "Português<span> / Nativo</span>",
+        footer_text: "Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋",
+        footer_copy: "Vinicius. Alguns direitos Reservados.",
+      },
+      en: {
+        experiencia: "Experience",
+        formacao: "Education",
+        contato: "Contact",
+        introducaoTitulo: "Front End Developer<br>& UX/UI Designer",
+        introducaoTexto: "Based in Curitiba ❄️",
+        experience_title: "Experience",
+        role_junior_dev: "Junior Developer",
+        experienciaTexto: "I develop small projects like Bikcraft using only <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. For web apps like the social network Dogs, I worked on the project's <strong>UX</strong> and <strong>UI</strong> Design.",
+        bikcraft_text: "In the Bikcraft project, I worked on the complete development of the website's HTML, CSS, and JavaScript. Additionally, I also provided design consulting.",
+        role_mid_designer: "Full Designer",
+        jurisoft_text: "I worked on the design of landing pages and the creation of interfaces focused on UX/UI, seeking visual solutions to optimize the user experience.",
+        role_jr_designer: "Junior Designer",
+        projetec_text: "I developed visual identities for corporate events and worked in video operations to ensure visual quality during executions.",
+        education_title: "Qualifications",
+        education_text: "My most recent academic experience was a <strong>Degree</strong> 🎓 in <strong>Visual Design</strong>. I also stay up-to-date with intensive online courses.",
+        degree_bachelor: "Bachelor",
+        course_visual_design: "Visual Design",
+        degree_technologist: "Technologist",
+        course_graphic_design: "Graphic Design",
+        course_electrotechnics: "Electrotechnics",
+        intensive_courses: "Intensive Courses",
+        course_frontend: "Front End for begginers <span>90h</span>",
+        course_js: "JavaScript ES6 Complete <span>72h</span>",
+        languages: "Languages",
+        language_english: "English <span> / C1</span>",
+        language_portuguese: "Portuguese<span> / Native</span>",
+        footer_text: "I’m available for new projects right now. Get in touch and let's talk 👋",
+        footer_copy: "Vinicius. Some rights reserved.",
+      }
+    };
+
+    const toggle = document.getElementById('languageToggle');
+    let currentLanguage = 'en'; // 🌍 Idioma padrão em inglês
+
+    function changeLanguage(language) {
+      document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+        element.innerHTML = translations[language][key];
+      });
+      document.documentElement.lang = language;
+      currentLanguage = language; // Atualiza o idioma atual
+    }
+
+    // 🚀 Aplica a tradução para inglês assim que a página carregar
+    document.addEventListener("DOMContentLoaded", () => {
+      changeLanguage(currentLanguage);
+      toggle.checked = currentLanguage === 'en'; // Mantém o botão sincronizado com o idioma
+    });
+
+    // Alterna o idioma quando o botão for clicado
+    toggle.addEventListener('change', () => {
+      if (toggle.checked) {
+        changeLanguage('en'); // Altera para inglês
+      } else {
+        changeLanguage('pt'); // Altera para português
+      }
+    });
+  </script>
 </body>
 
 </html>
